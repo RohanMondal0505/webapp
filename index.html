@@ -34,19 +34,30 @@
             </div>
             <div class="row">
                 <button onclick="add_fun(0)">0</button>
-                <button onclick="add_fun('=')"> = </button>
-                <button onclick="add_fun('CE')"> CE </button>
+                <button onclick="cancel()"> = </button>
+                <button onclick="cls()"> CE </button>
                 <button onclick="add_fun('+')"> + </button>
             </div>
         </div>
     </div>
 
     <script>
-        let buttons = document.querySelectorAll('button');
-        function add_fun(){
-            buttons.forEach(e => {
-                e.addEventListener('click', calculate)
-            });
+        var val = document.getElementById("display");
+
+        function add_fun(v) {
+            val.value += v;
+        }
+
+        function cls() {
+            val.value = eval(val.value);
+        }
+
+        function exe() {
+            val.value = eval(val.value);
+        }
+
+        function cancel() {
+            val.value = val.value.substr(0, val.value.length - 1);
         }
     </script>
 
