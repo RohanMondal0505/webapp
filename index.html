@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display_container">
+            <input type="text" name="display" id="display" readonly>
+        </div>
+        <div class="button_container">
+            <div class="row">
+                <button onclick="add_fun(7)">7</button>
+                <button onclick="add_fun(8)">8</button>
+                <button onclick="add_fun(9)">9</button>
+                <button onclick="add_fun('/')"> / </button>
+            </div>
+            <div class="row">
+                <button onclick="add_fun(4)">4</button>
+                <button onclick="add_fun(5)">5</button>
+                <button onclick="add_fun(6)">6</button>
+                <button onclick="add_fun('*')">*</button>
+            </div>
+            <div class="row">
+                <button onclick="add_fun(1)">1</button>
+                <button onclick="add_fun(2)">2</button>
+                <button onclick="add_fun(3)">3</button>
+                <button onclick="add_fun('-')"> - </button>
+
+            </div>
+            <div class="row">
+                <button onclick="add_fun(0)">0</button>
+                <button onclick="add_fun('=')"> = </button>
+                <button onclick="add_fun('CE')"> CE </button>
+                <button onclick="add_fun('+')"> + </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let buttons = document.querySelectorAll('button');
+        
+    </script>
+
+
+</body>
+
+</html>

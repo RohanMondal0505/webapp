@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    border: 1px solid #000;
+}
+
+.container .display_container{
+    width: 100%;
+    height: 100px;
+}
+
+.container .display_container input[type="text"]{
+    width: 100%;
+    height: 100%;
+    font-size:25px;
+}
+
+.container .button_container{
+    width: 100%;
+    height: calc(100% - 100px);
+}
+.container .button_container .row{
+    width: 100%;
+    height: 75px;
+    padding-left: 10px;
+}
+.container .button_container .row button{
+    width: 90px;
+    height: 70px;
+}
