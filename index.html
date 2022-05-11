@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="ISO-8859-1">
-    <title>Insert title here</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -43,7 +43,11 @@
 
     <script>
         let buttons = document.querySelectorAll('button');
-        
+        function add_fun(){
+            buttons.forEach(e => {
+                e.addEventListener('click', calculate)
+            });
+        }
     </script>
 
 
